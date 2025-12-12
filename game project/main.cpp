@@ -161,7 +161,7 @@ int main()
                 }
             }
 
-            if (enemyMoveTimer >= 40) {
+            if (enemyMoveTimer >= 30) {
                 for (auto& en : enemies) {
                     auto path = bfsPath(en, player);
                     if (!path.empty()) en = path[0];
